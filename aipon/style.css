@@ -1,0 +1,44 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.iphone-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.iphone-item {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.iphone-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .iphone-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .iphone-item {
+        width: 90%;
+    }
+}
